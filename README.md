@@ -1,1 +1,251 @@
-# Abdulmajeed.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdulmajid Alzahrani | Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity Professional | Penetration Testing, Vulnerability Assessment, Web & Mobile App Security." />
+  <style>
+    :root{
+      --bg:#0d1117;
+      --panel:#0f1522;
+      --ink:#e6edf3;
+      --sub:#9fb5d1;
+      --accent:#58a6ff;
+      --accent-2:#22d3ee;
+      --ok:#10b981;
+      --warn:#f59e0b;
+      --muted:#8b949e;
+      --card:#0b1220;
+      --border:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;margin:0;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    /* Hero */
+    .hero{
+      position:relative;overflow:hidden;border-bottom:1px solid var(--border);
+      background:radial-gradient(1200px 600px at 80% -10%,rgba(34,211,238,.10),transparent 60%),
+                 radial-gradient(900px 500px at 0% 0%,rgba(88,166,255,.10),transparent 55%),
+                 linear-gradient(180deg,#0d1117 0%, #0a0f1a 100%);
+    }
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;min-height:360px}
+    .title{font-size:40px;margin:0 0 8px;font-weight:800}
+    .subtitle{margin:0 0 18px;color:var(--sub)}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+    .badge{background:rgba(34,211,238,.10);border:1px solid rgba(34,211,238,.25);color:#a5f3fc;padding:6px 10px;border-radius:999px;font-size:13px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--panel);color:var(--ink);font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#001018;border:none}
+    .btn.ghost{background:transparent}
+    /* Decorative Cyber SVG */
+    .cyber{
+      width:100%;height:280px;border-radius:14px;background:linear-gradient(180deg,#0a1220,#08101b);
+      border:1px solid var(--border);position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35)
+    }
+    .cyber svg{position:absolute;inset:0;width:100%;height:100%}
+    /* Sections */
+    section{padding:42px 0;border-bottom:1px solid var(--border)}
+    h2{font-size:26px;margin:0 0 14px}
+    .grid{display:grid;gap:16px}
+    .grid.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid var(--border);padding:18px;border-radius:14px}
+    .meta{color:var(--muted);font-size:14px}
+    ul.clean{list-style:none;padding:0;margin:0}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{border:1px solid var(--border);background:#0c1422;padding:8px 12px;border-radius:999px;font-size:13px}
+    .xp{display:grid;gap:8px}
+    .row{display:flex;justify-content:space-between;gap:12px}
+    .row > span{color:var(--muted);font-size:14px}
+    .projects .card h3{margin:4px 0 8px}
+    .footer{padding:22px 0;text-align:center;color:var(--muted)}
+    /* Responsive */
+    @media (max-width:900px){
+      .hero-inner{grid-template-columns:1fr}
+      .cyber{height:220px}
+      .title{font-size:32px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1 class="title">Abdulmajid Alzahrani</h1>
+        <p class="subtitle">Cybersecurity Professional · Penetration Testing · Vulnerability Assessment · Web & Mobile App Security</p>
+
+        <div class="badges">
+          <span class="badge">Riyadh</span>
+          <span class="badge">CTF Player</span>
+          <span class="badge">Kali · Burp · Metasploit · Nmap</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="mailto:m.majeed7@hotmail.com">📧 Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/abdulmajeed-zahrani" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="btn ghost" href="#projects">🧰 Projects</a>
+        </div>
+      </div>
+
+      <!-- Cybersecurity “image” (vector, centered and crisp on GitHub) -->
+      <div class="cyber" role="img" aria-label="Cybersecurity visual with lock and network grid">
+        <svg viewBox="0 0 800 460" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#58a6ff" stop-opacity="0.35"/>
+              <stop offset="1" stop-color="#22d3ee" stop-opacity="0.15"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#0ea5e9" stop-opacity="1"/>
+              <stop offset="1" stop-color="#22d3ee" stop-opacity=".6"/>
+            </linearGradient>
+          </defs>
+          <!-- grid -->
+          <g stroke="url(#g1)" stroke-width="1">
+            <path d="M0 80 H800M0 130 H800M0 180 H800M0 230 H800M0 280 H800M0 330 H800M0 380 H800" opacity=".4"/>
+            <path d="M60 0 V460M140 0 V460M220 0 V460M300 0 V460M380 0 V460M460 0 V460M540 0 V460M620 0 V460M700 0 V460" opacity=".35"/>
+          </g>
+          <!-- lock -->
+          <g transform="translate(480,110)">
+            <rect x="-120" y="70" rx="18" ry="18" width="240" height="170" fill="none" stroke="url(#g2)" stroke-width="3"/>
+            <path d="M-60,70 v-28 a60,60 0 0 1 120 0 v28" fill="none" stroke="url(#g2)" stroke-width="3"/>
+            <circle cx="0" cy="150" r="12" fill="#22d3ee"/>
+            <rect x="-6" y="150" width="12" height="36" rx="6" fill="#22d3ee"/>
+          </g>
+          <!-- dots -->
+          <g fill="#22d3ee" opacity=".5">
+            <circle cx="90" cy="120" r="3"/><circle cx="210" cy="200" r="2.5"/>
+            <circle cx="150" cy="320" r="2.5"/><circle cx="720" cy="140" r="3"/>
+            <circle cx="650" cy="300" r="2.5"/><circle cx="310" cy="260" r="2"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        I specialize in ethical hacking and cybersecurity with practical experience in securing web and mobile applications,
+        performing penetration tests, vulnerability analysis, and delivering actionable remediation reports. I enjoy building
+        Python tooling to automate security workflows and playing CTFs to sharpen my offensive and defensive skills.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="skills">
+        <span class="chip">Penetration Testing</span>
+        <span class="chip">Web App Security</span>
+        <span class="chip">Mobile App Security</span>
+        <span class="chip">Vulnerability Assessment & Reporting</span>
+        <span class="chip">Secure Code Review</span>
+        <span class="chip">Python Scripting</span>
+        <span class="chip">Digital Forensics</span>
+        <span class="chip">TCP/IP · IDS/IPS</span>
+        <span class="chip">OWASP Top 10</span>
+        <span class="chip">Kali Linux</span>
+        <span class="chip">Burp Suite</span>
+        <span class="chip">Metasploit</span>
+        <span class="chip">Nmap</span>
+        <span class="chip">Wireshark</span>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+      <div class="grid">
+        <div class="card xp">
+          <div class="row">
+            <strong>HARDHAT ENTERPRISE · Cybersecurity</strong>
+            <span>07/2024 – 02/2025 · Australia</span>
+          </div>
+          <ul class="clean">
+            <li>Performed web and Android penetration testing; identified vulnerabilities and delivered remediation plans.</li>
+            <li>Developed custom scripts to automate testing and increase coverage/efficiency.</li>
+            <li>Conducted security assessments to safeguard user data across applications.</li>
+          </ul>
+          <span class="meta">Tools: Kali, Burp, Metasploit, Nmap · Reporting & Follow-ups</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education</h2>
+      <div class="grid cards">
+        <div class="card">
+          <strong>MSc in Cybersecurity</strong>
+          <div class="meta">Deakin University, Australia · 2025</div>
+        </div>
+        <div class="card">
+          <strong>BSc in Information Systems</strong>
+          <div class="meta">Albaha University, Saudi Arabia · 2022</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" aria-labelledby="certs-title">
+      <h2 id="certs-title">Certifications</h2>
+      <div class="grid cards">
+        <div class="card">
+          <strong>CCNA</strong><div class="meta">Cisco · ID: CSCO14184696</div>
+        </div>
+        <div class="card"><strong>CompTIA Security+</strong></div>
+        <div class="card"><strong>CompTIA Linux+</strong></div>
+        <div class="card"><strong>CEHPC</strong> – Ethical Hacking Professional</div>
+        <div class="card"><strong>eJPT</strong> – Junior Penetration Tester</div>
+        <div class="card"><strong>eCPPT</strong> – Certified Professional Penetration Tester</div>
+        <div class="card"><strong>eWAPT</strong> – Web App Penetration Tester</div>
+        <div class="card"><strong>eEDA</strong> – Enterprise Defense Administrator</div>
+      </div>
+      <p class="meta">More: <a href="https://www.credly.com/users/abdulmajeed" target="_blank" rel="noopener">Credly Profile</a></p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3><a href="https://github.com/mj95d" target="_blank" rel="noopener">Bug Bounty Toolkit</a></h3>
+          <p class="meta">Recon · Subdomain enum · Port scanning · Web fuzzing · Reporting</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/mj95d" target="_blank" rel="noopener">WebSec Scripts (Python)</a></h3>
+          <p class="meta">Automated checks for headers, cookie flags, simple XSS/SQLi probes</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/mj95d" target="_blank" rel="noopener">Android Pentest Notes</a></h3>
+          <p class="meta">Methodologies · ADB tips · Frida/Objection snippets</p>
+        </article>
+      </div>
+      <p class="meta">Tip: replace project links/titles with your actual repos.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="grid cards">
+        <div class="card"><strong>Email</strong><br><a href="mailto:m.majeed7@hotmail.com">m.majeed7@hotmail.com</a></div>
+        <div class="card"><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/abdulmajeed-zahrani" target="_blank" rel="noopener">linkedin.com/in/abdulmajeed-zahrani</a></div>
+        <div class="card"><strong>Location</strong><br>Riyadh, Saudi Arabia</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="y"></span> Abdulmajid Alzahrani — “Security is not a product, but a process.”</small>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
